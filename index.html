@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Violentómetro Digital - Violencia de Género en México</title>
+    <style>
+        /* Variables de diseño neumórfico */
+        :root {
+            --bg: #e0e5ec;
+            --card: #ffffff;
+            --shadow-light: #ffffff;
+            --shadow-dark: #a3b1c6;
+            --text: #2d3748;
+            --accent: #e53e3e;
+            --primary: #3182ce;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            padding: 2rem 1rem;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin: 0 15% 2.5rem 15%;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.8rem;
+            color: var(--accent);
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 1.6rem;
+            margin: 1.8rem 0 1rem;
+            color: var(--primary);
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        /* Estilo neumórfico para tarjetas */
+        .card {
+            background: var(--card);
+            border-radius: 20px;
+            padding: 1.8rem;
+            margin-bottom: 1.8rem;
+            box-shadow: 8px 8px 16px var(--shadow-dark), -8px -8px 16px var(--shadow-light);
+            transition: transform 0.2s;
+        }
+
+        .thermometer {
+            width: 100%;
+            margin-bottom: 1.8rem;
+            background: #ffffff;
+            border-radius: 12px;
+            position: relative;
+            box-shadow:
+                8px 8px 16px #bec3c9,
+                -8px -8px 16px #ffffff;
+            overflow: hidden;
+        }
+
+        /* Degradado del lado izquierdo (el "mercurio") */
+        .gradient-bar {
+            width: 30px;
+            /* Ancho del termómetro */
+            height: 100%;
+            background: linear-gradient(to bottom,
+                    #eccf29,
+                    #ff4b2b,
+                    #6017d6,
+                    #000);
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: 8px 0 0 8px;
+        }
+
+        .mark {
+            position: relative;
+            /*margin: 2.5rem;*/
+            margin: 5px 5% 5px 10%;
+        }
+
+        .card h3 {
+            color: var(--primary);
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+        }
+
+        ul {
+            padding-left: 1.4rem;
+            margin: 0.8rem 0;
+        }
+
+        li {
+            margin-bottom: 0.6rem;
+        }
+
+        .highlight {
+            background: rgba(229, 62, 62, 0.1);
+            padding: 0.2rem 0.4rem;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+
+        .resources {
+            background: rgba(49, 130, 206, 0.08);
+            border-left: 4px solid var(--primary);
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 1rem;
+            color: #5a6b82;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                padding: 1.4rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Violentómetro</h1>
+            <p>Como parte de la importante tarea de conscientizar, visibilizar y sensibilizar sobre los tipos de
+                violencia
+                que han surgido por el uso de las nuevas tecnologías digitales.
+            </p>
+            <p>
+                En orden de aparición, son las actitudes violentas de menor grado a mayor grado.
+            </p>
+            <p>
+                No importa en el área que tu o alguna conocida tuya se encuentre, este es el momento de <strong>tomar
+                    acciones.</strong>
+            </p>
+        </header>
+        <div class="thermometer">
+            <div class="gradient-bar"></div>
+            <div class="glass"></div>
+            <!-- Marcas de temperatura -->
+            <div class="mark">
+
+                <h2><strong>Esta es la primer Alerta</strong></h1>
+                    <ul>
+                        <li> Humillaciones</li>
+                        <li>Ley del hielo (Ignorar)</li>
+                        <li>Chantaje Emocional</li>
+                        <li>Bromas Hirientes / Sarcásticas</li>
+                        <li><strong>Digital </strong>Comentarios Sexistas</li>
+                        <li><strong>Digital </strong>Mensajes no deseados</li>
+                        <li>"Mansplaining" (Explicar un término, que el agresor considera que
+                            no
+                            sabes)</li>
+                        <li><strong>Digital </strong>Difusión no consentida de imágenes íntimas</li>
+                        <li><strong>Digital </strong>Creación de grupos de odio en alguna red social</li>
+                        <li><strong>Digital </strong>Humillación pública (principalmente en posts públicos)</li>
+                    </ul>
+
+                    <h2><strong>Amiga Date cuenta</strong></h2>
+                    <ul>
+                        <li>Celos excesivos</li>
+                        <li>Ridiculizaciones</li>
+                        <li>Control de uso de redes sociales, celular, amigos</li>
+                        <li>Culpabilizar</li>
+                        <li>Tocar sin tu consentimiento</li>
+                        <li>Destrucción de artículos personales</li>
+                        <li>Control, manipulación (chantaje, chismes)</li>
+                        <li>Amenazas, intimidaciones (si, también tus mascotas)</li>
+                        <li><strong>Digital </strong>Sextosión (Extorsión con contenido sexual)</li>
+                        <li><strong>Digital </strong>Suplantación de identidad</li>
+                        <li><strong>Digital </strong>Doxxing (Difusión de datos personales)</li>
+                        <li><strong>Digital </strong>Intimidación</li>
+                    </ul>
+                    <h2><strong>Ya basta, Urge apoyo profesional</strong></h2>
+                    <ul>
+                        <li>Cachetadas</li>
+                        <li>Patadas</li>
+                        <li>Encierros, aislamiento</li>
+                        <li>Amenazas con objetos</li>
+                        <li><strong>Digital </strong>Deepfakes pornográficos</li>
+                        <li><strong>Digital </strong>Campañas públicas de funas digitales (equivalente al linchamiento)
+                        </li>
+                        <li><strong>Digital </strong>Acciones generalidades con misoginia</li>
+                        <li><strong>Digital </strong>Incitación a la violencia colectiva</li>
+                        <li>Forzar relaciones sexuales</li>
+                        <li>Abuso sexual (No usar condón, Exceso de fuerza, Dominación no concensuada)</li>
+                        <li>Violación</li>
+                        <li>Mutilación</li>
+                        <li>Amenaza de muerte</li>
+                        <li>Asesinato</li>
+                    </ul>
+                    </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Marco legal en México</h2>
+            <ul>
+                <li><strong>Ley Olimpia:</strong> Tipifica la difusión no consentida de contenido íntimo como delito en
+                    los 32 estados. Permite denuncia penal, protección y acompañamiento.</li>
+                <li><strong>Ley General de Acceso de las Mujeres a una Vida Libre de Violencia (LGAMVLV):</strong>
+                    Reconoce la violencia digital y mediática como modalidades de violencia de género.</li>
+                <li><strong>Ley Federal para Prevenir y Eliminar la Discriminación (LFPED):</strong> Protege contra
+                    discursos de odio en entornos digitales.</li>
+                <li><strong>Códigos penales estatales:</strong> Muchos incluyen figuras como “acoso digital” o
+                    “hostigamiento sexual en medios electrónicos” (CDMX, Jalisco, Nuevo León, etc.).</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Recursos de apoyo en México</h2>
+            <div class="resources">
+                <ul>
+                    <li><strong>Línea nacional:</strong> <a href="tel:+8001008990">800 100 8990</a> (Atención las 24
+                        horas)</li>
+                    <li><strong>CONAVIM:</strong> <a href="https://www.gob.mx/conavim"
+                            target="_blank">www.gob.mx/conavim</a></li>
+                    <li><strong>Línea Mujeres de la Ciudad de México (Locatel):</strong> Disponible las 24 horas, los 7
+                        días de la semana, incluidos festivos, por teléfono (<a href="tel:+*0311">*0311</a> o <a
+                            href="tel:+5556581111">55 5658 1111</a>) y a través de chat
+                        de 10 a 18 horas, todos los días del año, en <a href="https://cms311.cdmx.gob.mx/linea-mujeres/"
+                            target="_blank">https://cms311.cdmx.gob.mx/linea-mujeres/</a></li>
+                    <li><strong>Línea para hombres víctimas de violencia familiar:</strong> Disponible por teléfono al
+                        <a href="tel:+5555335533">55 5533 5533</a> y por chat
+                    </li>
+                    <li><strong>Centros de Justicia para las Mujeres en la CDMX:</strong>Ofrecen atención integral,
+                        incluyendo servicios de trabajo social, psicología, jurídica, médicos, empoderamiento y medidas
+                        de protección, con atención las 24 horas, los 365 días del año.
+                        Los números de contacto son: Azcapotzalco <a href="tel:+55 53 46 83 94">55 53 46 83 94</a>
+                        Iztapalapa <a href="tel:+55 53 45 57 37">55 53 45 57 37</a> Tlalpan <a
+                            href="tel:+55 52 900 92 80">55 52 900 92 80</a></li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+
+            <div>
+                <p>Elaborado con impotencia, coraje y por un mundo mejor ❤️</p>
+
+                Jesus Edgar Jaramillo Armenta - Edgar Armando Picasso Villanueva
+            </div>
+
+        </footer>
+
+</body>
+
+</html>
